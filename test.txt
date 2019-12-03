@@ -1,0 +1,35 @@
+import java.util.*;
+
+public class Avenger {
+
+	private int power;
+	private char code;
+	private String name = "Iron Man";
+	private List<Avenger> bros;
+
+	public void levelUp() {
+		this.power++;
+	}
+
+	public char getPower() {
+		return this.power;
+	}
+
+	public void battle() {
+		for (Avenger avenger : this.bros) {
+			if (this.power <= avenger.getPower()) {
+				break;
+			} else {
+				this.power -= 2;
+			}
+		}
+		this.code = 'A';
+	}
+}
+
+public static void main(String[] args) {
+	int num = 171250605;
+	while (1) {
+		num = num / 32;
+	}
+}
