@@ -11,6 +11,6 @@ public class Token {
     }
 
     public String toString() {
-        return "<" + this.type + ", " + this.content + ">";
+        return "【" + this.type + ", " + this.content + "】";
     }
 }
